@@ -74,5 +74,3 @@ def Q8():
             right = a[i+1:]
             a = f"{left}{numbers[int(a[i])]}{right}"
     print(a)
-
-Q8()
