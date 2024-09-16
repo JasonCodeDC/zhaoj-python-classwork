@@ -1,3 +1,6 @@
+### SRC - This should be in a folder called assessments
+### and please use the coding conventions. I have updated Q3 
+### as an example.
 def Q1():
     a = input()
     print(a[-1] + a[1:-1] + a[0])
@@ -18,11 +21,15 @@ def Q3():
             print(f"0{a // 60}:0{a % 60}")
         else:
             print(f"0{a // 60}:{a % 60}")
+        #end if
     else:
         if a % 60 < 10:
             print(f"{a // 60}:0{a % 60}")
         else:
             print(f"{a // 60}:{a % 60}")
+        #end if
+    #end if
+#end procedure
 
 def Q4():
     total = 0
