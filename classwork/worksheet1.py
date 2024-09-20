@@ -13,6 +13,7 @@ def Task2():
     room_dimensions = []
     for _ in range(3):
         room_dimensions.append(int(input()))
+    # next _
     unpaintable = 0
     more_areas_unpaintable = True
     while more_areas_unpaintable == True:
@@ -20,13 +21,14 @@ def Task2():
         height = int(input())
         unpaintable += width * height
         more_areas_unpaintable = bool(input("More areas that cannot be painted? (True/False): "))
-    #endwhile
+    # endwhile
     coats = int(input())
     room_surface_area = (((room_dimensions[0] * room_dimensions[1] * 2) + 
                         (room_dimensions[0] * room_dimensions[2] * 2) + 
                         (room_dimensions[1] * room_dimensions[2] * 2) -
                         unpaintable) * coats)
     print(room_surface_area/11)
+# endprocedure
 
 def Task3():
     pass
@@ -50,19 +52,13 @@ def Task3():
     (iii) gallons
     """
 
-def Task4():
-    pass
-    # Task written in pseudocode
-
-    """
-    4)
+def Task4Q4():
     numstudents = input("How many students?")
     numbooks = input("How many books?")
-    print("You can give out " + numbooks DIV numstudents + " per student with " + numbooks MOD numstudents + " books left over")
-    """
+    print(f"You can give out {numbooks // numstudents} per student with {numbooks % numstudents} books left over")
+# endprocedure
 
-    """
-    5)
+def Task4Q5():
     name = input("Enter a name")
-    print("The name is " + name.length + " characters long.")
-    """
+    print(f"The name is {len(name)} characters long.")
+# endprocedure
